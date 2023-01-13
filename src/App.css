@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Pacifico&display=swap");
+
+:root {
+  --clr-teal: #29a0b1;
+  --clr-teal-green: #167d7f;
+  --clr-spearming: #98d7c2;
+  --clr-mint: #ddffe7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--clr-teal);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  height: 100vh;
+  width: 60%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#quote-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #ccc;
+}
+
+#text {
+  font-family: "Pacifico", cursive;
+
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#author {
+  font-family: "Manrope", sans-serif;
+
+  text-align: right;
+  width: 100%;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+#new-quote {
+  background-color: var(--clr-teal);
+
   color: white;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 10px;
+  font-size: 1.2em;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#new-quote:hover {
+  background-color: var(--clr-teal-green);
 }
